@@ -1,0 +1,17 @@
+digraph G{
+ rankdir = LR;
+node [shape=box]; 
+ compound=true; 
+1[label="Nombre: cliente1
+Edad : 20"];
+2[label="Nombre: cliente2
+Edad : 22"];
+3[label="Nombre: cliente3
+Edad : 23"];
+4[label="Nombre: cliente4
+Edad : 25"];
+1->2;
+2->3;
+3->4;
+
+}

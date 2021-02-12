@@ -7,13 +7,13 @@ import (
 )
 
 type Nodo struct {
-	siguiente *Nodo
-	persona   *Persona.Cliente
+	Siguiente *Nodo
+	Persona   *Persona.Cliente
 }
 
 type Lista struct {
-	primero  *Nodo
-	ultimo   *Nodo
+	Primero  *Nodo
+	Ultimo   *Nodo
 	Contador int
 }
 
@@ -29,25 +29,25 @@ func Insertar(cliente *Persona.Cliente, lista *Lista) {
 
 	var nuevo *Nodo = New_Nodo(cliente)
 
-	if lista.primero == nil {
-		lista.primero = nuevo
-		lista.ultimo = nuevo
+	if lista.Primero == nil {
+		lista.Primero = nuevo
+		lista.Ultimo = nuevo
 		lista.Contador += 1
 	} else {
-		lista.ultimo.siguiente = nuevo
-		lista.ultimo = lista.ultimo.siguiente
+		lista.Ultimo.Siguiente = nuevo
+		lista.Ultimo = lista.Ultimo.Siguiente
 		lista.Contador += 1
 	}
 }
 
 func Imprimir(lista *Lista) {
-	aux := lista.primero
+	aux := lista.Primero
 
 	for aux != nil {
-		fmt.Println("Id:", aux.persona.Id)
-		fmt.Println("Nombre:", aux.persona.Nombre)
-		fmt.Println("Edad:", aux.persona.Edad)
-		aux = aux.siguiente
+		fmt.Println("Id:", aux.Persona.Id)
+		fmt.Println("Nombre:", aux.Persona.Nombre)
+		fmt.Println("Edad:", aux.Persona.Edad)
+		aux = aux.Siguiente
 	}
 
 }
