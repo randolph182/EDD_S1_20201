@@ -8,14 +8,15 @@ import (
 
 func main(){
 	arbol := Estructuras.New_Arbol()
-	Estructuras.Insertar_Arbol(arbol, 34) 
-	Estructuras.Insertar_Arbol(arbol, 13)
-	Estructuras.Insertar_Arbol(arbol, 21)
-	Estructuras.Insertar_Arbol(arbol, 109) 
-	Estructuras.Insertar_Arbol(arbol, 10293)
-	v:= Estructuras.Insertar_Arbol(arbol, 5)
-	fmt.Println(v)
-	Estructuras.Insertar_Arbol(arbol, 100)
+	Estructuras.Insertar_Arbol(arbol, 10) 
+	Estructuras.Insertar_Arbol(arbol, 11)
+	Estructuras.Insertar_Arbol(arbol, 8)
+	Estructuras.Insertar_Arbol(arbol, 6) 
+	Estructuras.Insertar_Arbol(arbol, 5)
+	Estructuras.Insertar_Arbol(arbol, 9)
+	// v:= Estructuras.Insertar_Arbol(arbol, 5)
+	// fmt.Println(v)
+	// Estructuras.Insertar_Arbol(arbol, 100)
 
 	// Estructuras.Insertar_Arbol(arbol, 35) 
 	
