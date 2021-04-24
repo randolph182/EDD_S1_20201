@@ -20,4 +20,4 @@ func main(){
 	// Estructuras.InOrden(arbol)
 	Grafo.Generar_Grafo(arbol)
 	fmt.Println("hola mundo")
-}
+	}
